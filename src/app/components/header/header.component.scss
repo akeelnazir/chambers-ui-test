@@ -1,0 +1,22 @@
+.header {
+  padding: 10px 20px 10px 7px;
+  background: rgb(212, 42, 93);
+  color: #fff;
+  vertical-align: center;
+
+  button.hamburger {
+    vertical-align: top;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 147px;
+    height: 42px;
+    margin-left: 1rem;
+    background-image: url("../../../assets/images/chambers_blue.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+}
+
