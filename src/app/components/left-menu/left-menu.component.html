@@ -6,7 +6,7 @@
         <a
           mat-list-item
           *ngFor="let page of pages"
-          [href]="page.link"
+          [routerLink]="page.link"
         >
           <mat-icon style="padding-right:5px;">{{page.icon}}</mat-icon>
           <span [@animateText]="linkText ? 'show' : 'hide'">{{ page.name }} </span>
