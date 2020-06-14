@@ -21,8 +21,8 @@ export class LeftMenuComponent implements OnInit {
   public linkText: boolean = false
 
   public pages: Page[] = [
-    { name: 'Posts', link: '/posts', icon: 'inbox' },
-    { name: 'Users', link: '/users', icon: 'face' }
+    { name: 'Posts', link: '/posts', icon: 'forum' },
+    { name: 'Users', link: '/users', icon: 'people' }
   ]
 
   constructor(private _sidenavService: SidenavService) {

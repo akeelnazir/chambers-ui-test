@@ -17,6 +17,16 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
+  .user {
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: 2rem;
+    width: 100px;
+    float: right;
+    color: whitesmoke;
+  }
 }
 
