@@ -27,7 +27,7 @@ export class PostsService {
   }
 
   loadAll() {
-    return this.http
+    this.http
       .get<Post[]>('https://jsonplaceholder.typicode.com/posts')
       .subscribe(posts => {
         this.cache.posts = posts

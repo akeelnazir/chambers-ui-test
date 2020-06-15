@@ -27,7 +27,7 @@ export class UsersService {
   }
 
   loadAll() {
-    return this.http.get<User[]>('https://jsonplaceholder.typicode.com/users')
+    this.http.get<User[]>('https://jsonplaceholder.typicode.com/users')
       .subscribe(users => {
         this.cache.users = users
         this._users.next(users)
