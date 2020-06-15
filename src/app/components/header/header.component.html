@@ -6,8 +6,14 @@
   <span class="logo"></span>
 
   <span class="user">
-    <mat-icon class="user-icon">face</mat-icon>
-    <span class="user-name">Jane Doe</span>
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon class="user-icon">face</mat-icon>
+      Jane Doe
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Sign out</button>
+    </mat-menu>
+
   </span>
 
 </div>

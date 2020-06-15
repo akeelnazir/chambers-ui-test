@@ -4,11 +4,15 @@ import { RouterModule } from '@angular/router'
 
 import { MaterialModule } from '../shared/material/material.module'
 
+import { UsernamePipe } from '../pipes/username/username.pipe'
+import { TruncatePipe } from '../pipes/truncate/truncate.pipe'
+
 import { HeaderComponent } from './header/header.component'
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
-import { UsersComponent } from './users/users.component'
+import { UsersComponent } from './users/users.component';
+import { PostsListComponent } from './posts-list/posts-list.component'
 
 @NgModule({
   declarations: [
@@ -16,16 +20,21 @@ import { UsersComponent } from './users/users.component'
     LeftMenuComponent,
     HomeComponent,
     PostsComponent,
-    UsersComponent
+    UsersComponent,
+    PostsListComponent,
+    UsernamePipe,
+    TruncatePipe
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
   ],
   exports: [
     HeaderComponent,
-    LeftMenuComponent
+    LeftMenuComponent,
+    UsernamePipe,
+    TruncatePipe
   ]
 })
 export class ComponentsModule {

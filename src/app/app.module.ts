@@ -5,23 +5,26 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialModule } from './shared/material/material.module'
 import { ComponentsModule } from './components/components.module'
 import { AppRoutingModule } from './app-routing.module'
+import { HttpClientModule } from '@angular/common/http'
 
 import { SidenavService } from './services/sidenav.service'
+import { PostsService } from './services/posts/posts.service'
 
-import { AppComponent } from './app.component'
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     ComponentsModule,
     AppRoutingModule
   ],
-  providers: [SidenavService],
+  providers: [SidenavService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

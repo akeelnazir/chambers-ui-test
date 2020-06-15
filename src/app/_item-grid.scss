@@ -1,0 +1,10 @@
+$card-width: 350px;
+$card-height: 200px;
+$grid-gutter: 20px;
+
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, $card-width);
+  grid-auto-rows: $card-height;
+  grid-gap: $grid-gutter;
+}
